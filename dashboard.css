@@ -1,0 +1,56 @@
+/* Animations */
+
+@keyframes hoverLink {
+    100% {font-size: larger};
+}
+
+/* Default Elements */
+
+body {
+    font-family: 'Segoe UI';
+    
+    background-color: black;
+    background-image: url("res/images/bg.png");
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+}
+
+a {
+    color: white;
+    font-size: large;
+    font-weight: 400;
+    text-decoration: none;
+    text-shadow: 0px 5px 10px black;
+}
+a:hover {
+    animation: hoverLink;
+    animation-duration: 50ms;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+a:active {
+    color: skyblue;
+    text-shadow: 0px 20px 5px black;
+}
+
+/* IDs and Classes */
+
+#bannertext {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -70%);
+    height: 200px;
+}
+
+.navbar {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, 190%);
+}
+
+.link {
+    margin-right: 20px;
+}
