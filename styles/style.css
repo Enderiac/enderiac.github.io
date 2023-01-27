@@ -1,0 +1,139 @@
+/* Animations */
+
+@keyframes buttonClick {
+    100% {
+        background-color: rgb(0, 62, 87);
+        color: rgb(0, 150, 209);
+        box-shadow: 0px 5px 10px black;
+    }
+}
+@keyframes glowSection {
+    100% {
+        box-shadow: 0px 0px 20px rgb(0, 150, 209);
+    }
+}
+
+/* Default Elements */
+
+body {
+    color: white;
+    background-color: rgb(31, 31, 31);
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+button {
+    background-color: rgb(0, 150, 209);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: white;
+    min-height: 35px;
+    min-width: 80px;
+    border-radius: 5px;
+    border-width: 0px;
+}
+button:active {
+    animation: buttonClick;
+    animation-duration: 100ms;
+    animation-fill-mode: forwards;
+}
+
+iframe {
+    border-radius: 20px;
+    border-width: 0px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+span {
+    display: inline-block;
+    vertical-align: middle;
+    line-height: normal;
+}
+
+/* IDs and Classes */
+
+#titlebar {
+    height: 60px;
+}
+
+#title {
+    height: 50px;
+    position: relative;
+    margin-left: 5px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.titlebar {
+    position: sticky;
+    margin-top: 0;
+    top: 0;
+    
+    box-shadow: 0px 4px 20px black;
+    background-color: black;
+}
+
+#banner {
+    background-image: url("/res/images/banner.png");
+    height: 300px;
+    background-position: center;
+    background-size: cover;
+}
+
+.sectionbar {
+    background: linear-gradient(rgb(0, 150, 209), rgb(0, 62, 87));
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+    border-radius: 20px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+}
+.sectionbar:hover {
+    animation: glowSection;
+    animation-duration: 200ms;
+    animation-fill-mode: forwards;
+}
+
+.sectiontitle {
+    font-size: 25px;
+    font-weight: 400;
+    text-align: center;
+    width: 100%;
+    clear: both;
+}
+
+#latestytvid {
+    display: block;
+    margin-top: 20px;
+    margin: 0 auto;
+
+    width: 95%;
+    height: calc(100vh - 200px);
+}
+
+#latestytvidname {
+    text-align: center;
+    font-weight: lighter;
+}
+
+#subscribe {
+    background-color: red;
+    width: 200px;
+    left: 50%;
+}
+
+
+#watchonyt {
+    width: 200px;
+    left: 50%;
+}
+
+.centeredbutton {
+    position: relative;
+    left: 50%;
+    right: 50%;
+    transform: translate(-50%);
+}
