@@ -11,6 +11,19 @@
         <link rel="icon" href="/res/images/favicon.ico">
     </head>
     
+    <div class="gui" id="listenon">
+        <img id="listenonimg" src="/music/res/undefined.png">
+        <h1 id="listenontitle">undefined</h1>
+        <h3 id="listenonartist">undefined</h3>
+        <hr style="margin-top: -5px;">
+        <h2 style="margin-top: 20px;">Listen on</h2>
+        <a href="/" id="soundcloud" class="soundcloud" target="_blank"><img src="/res/images/soundcloud.png" class="listenonlink"></a><br class="soundcloud">
+        <a href="/" id="youtube" class="youtube" target="_blank"><img src="/res/images/youtube.png" class="listenonlink"></a><br class="youtube">
+        <a href="/" id="mp3" class="mp3" target="_blank"><img src="/res/images/mp3.png" class="listenonlink"></a><br class="mp3">
+        <a href="/" id="newgrounds" class="newgrounds" target="_blank"><img src="/res/images/newgrounds.png" class="listenonlink"></a><br class="mp3">
+        <button onclick="hidegui()" class="closebutton">Close</button>
+    </div>
+    
     <body>
         <nav id="navbar" class="navbar">
             <a class="navlink" id="home" href="">HOME</a>
@@ -27,28 +40,28 @@
                 <h2 class="tlartistname">Enderiac</h2>
                 <h1 class="tlalbumname">Sonar</h1>
                 <a href="https://drive.google.com/uc?export=download&id=1Ukmpuw7-0RLluVSmCj3J6pW-mFcSr9eL" class="tldownload">Download</a>
-                <a class="tlalltracks" href="https://drive.google.com/file/d/1Ukmpuw7-0RLluVSmCj3J6pW-mFcSr9eL/view?usp=sharing" target="_blank">Play</a>
+                <a onclick='showtrack("Sonar", "Eclipse", "Enderiac", "enderiac1/sonar", false, "1Ukmpuw7-0RLluVSmCj3J6pW-mFcSr9eL", "1194522")' class="tlalltracks" target="_blank">Play</a>
             </div>
             <div class="container" id="track">
                 <img class="tlalbumart" src="/music/res/Eclipse.png">
                 <h2 class="tlartistname">Enderiac</h2>
                 <h1 class="tlalbumname">Stereo</h1>
                 <a href="https://drive.google.com/uc?export=download&id=19um9FQIxfkh1rbgiPzCjOWeyKpwxmEWu" class="tldownload">Download</a>
-                <a class="tlalltracks" href="https://youtu.be/eJ18cSg1Z2g" target="_blank">Play</a>
+                <a onclick='showtrack("Stereo", "Eclipse", "Enderiac", "enderiac1/stereo", "eJ18cSg1Z2g", "19um9FQIxfkh1rbgiPzCjOWeyKpwxmEWu", false)' class="tlalltracks" target="_blank">Play</a>
             </div>
             <div class="container" id="track">
                 <img class="tlalbumart" src="/music/res/Eclipse.png">
                 <h2 class="tlartistname">Enderiac</h2>
                 <h1 class="tlalbumname">Aspect</h1>
                 <a href="https://drive.google.com/uc?export=download&id=1ym1AcvrEXDzsOgG0CH8Gp9shcH--S9Ek" class="tldownload">Download</a>
-                <a class="tlalltracks" href="https://youtu.be/XSBIScppsP8" target="_blank">Play</a>
+                <a onclick='showtrack("Aspect", "Eclipse", "Enderiac", "enderiac1/aspect", "XSBIScppsP8", "1ym1AcvrEXDzsOgG0CH8Gp9shcH--S9Ek", "1194523")' class="tlalltracks" target="_blank">Play</a>
             </div>
         </div>
 
         <div class="copyright" style="margin-top: 40px;">© Enderiac 2023</div>
     </body>
 
-    <script src="/scripts/navpath.js"></script>
-    <script src="/scripts/detectviewportsize.js"></script>
+    <script src="/scripts/main.js"></script>
+    
     
 </html>

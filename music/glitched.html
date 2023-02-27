@@ -15,6 +15,19 @@
         </style>
     </head>
     
+    <div class="gui" id="listenon">
+        <img id="listenonimg" src="/music/res/undefined.png">
+        <h1 id="listenontitle">undefined</h1>
+        <h3 id="listenonartist">undefined</h3>
+        <hr style="margin-top: -5px;">
+        <h2 style="margin-top: 20px;">Listen on</h2>
+        <a href="/" id="soundcloud" class="soundcloud" target="_blank"><img src="/res/images/soundcloud.png" class="listenonlink"></a><br class="soundcloud">
+        <a href="/" id="youtube" class="youtube" target="_blank"><img src="/res/images/youtube.png" class="listenonlink"></a><br class="youtube">
+        <a href="/" id="mp3" class="mp3" target="_blank"><img src="/res/images/mp3.png" class="listenonlink"></a><br class="mp3">
+        <a href="/" id="newgrounds" class="newgrounds" target="_blank"><img src="/res/images/newgrounds.png" class="listenonlink"></a><br class="mp3">
+        <button onclick="hidegui()" class="closebutton">Close</button>
+    </div>
+    
     <body>
         <nav id="navbar" class="navbar">
             <a class="navlink" id="home" href="">HOME</a>
@@ -31,28 +44,28 @@
                 <h2 class="tlartistname">Enderiac</h2>
                 <h1 class="tlalbumname" style="font-size: x-large; margin-top: 20px;">Get Glitchy</h1>
                 <a href="https://drive.google.com/uc?export=download&id=1Z8FdLG-uLZNxuQD5n2g26jukMoIuLiWc" class="tldownload">Download</a>
-                <a class="tlalltracks" href="https://youtu.be/90h-01IG5ec" target="_blank">Play</a>
+                <a onclick='showtrack("Get Glitchy", "Glitched", "Enderiac", "enderiac1/get-glitchy", "90h-01IG5ec", "1Z8FdLG-uLZNxuQD5n2g26jukMoIuLiWc")' class="tlalltracks" target="_blank">Play</a>
             </div>
             <div class="container" id="track">
                 <img class="tlalbumart" src="/music/res/Glitched.png">
                 <h2 class="tlartistname">Enderiac</h2>
                 <h1 class="tlalbumname">Seagull</h1>
                 <a href="https://drive.google.com/uc?export=download&id=1JX3tMYfkDKMnGjFefPx6nvFscAtqzEyI" class="tldownload">Download</a>
-                <a class="tlalltracks" href="https://youtu.be/Nz30e1_mOJM" target="_blank">Play</a>
+                <a onclick='showtrack("Seagull", "Glitched", "Enderiac", "enderiac1/seagull", "Nz30e1_mOJM", "1JX3tMYfkDKMnGjFefPx6nvFscAtqzEyI")' class="tlalltracks" target="_blank">Play</a>
             </div>
             <div class="container" id="track">
                 <img class="tlalbumart" src="/music/res/Glitched.png">
                 <h2 class="tlartistname">Enderiac</h2>
                 <h1 class="tlalbumname" style="font-size: large; margin-top: 20px;">Get Glitchy Pt. 2</h1>
                 <a href="https://drive.google.com/uc?export=download&id=1nBUgRguCwau5ihdRG8x8kSnjIsS7TaiZ" class="tldownload">Download</a>
-                <a class="tlalltracks" href="https://youtu.be/nEyMvMbpIPA" target="_blank">Play</a>
+                <a onclick='showtrack("Get Glitchy Pt. 2", "Glitched", "Enderiac", "enderiac1/get-glitchy-pt-2", "nEyMvMbpIPA", "1nBUgRguCwau5ihdRG8x8kSnjIsS7TaiZ")' class="tlalltracks" target="_blank">Play</a>
             </div>
         </div>
 
         <div class="copyright" style="margin-top: 40px;">© Enderiac 2023</div>
     </body>
 
-    <script src="/scripts/navpath.js"></script>
-    <script src="/scripts/detectviewportsize.js"></script>
+    <script src="/scripts/main.js"></script>
+    
     
 </html>

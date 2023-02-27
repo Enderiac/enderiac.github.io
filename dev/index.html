@@ -11,6 +11,19 @@
         <link rel="icon" href="/res/images/favicon.ico">
     </head>
     
+    <div class="gui" id="listenon">
+        <img id="listenonimg" src="/music/res/undefined.png">
+        <h1 id="listenontitle">undefined</h1>
+        <h3 id="listenonartist">undefined</h3>
+        <hr style="margin-top: -5px;">
+        <h2 style="margin-top: 20px;">Listen on</h2>
+        <a href="/" id="soundcloud" class="soundcloud" target="_blank"><img src="/res/images/soundcloud.png" class="listenonlink"></a><br class="soundcloud">
+        <a href="/" id="youtube" class="youtube" target="_blank"><img src="/res/images/youtube.png" class="listenonlink"></a><br class="youtube">
+        <a href="/" id="mp3" class="mp3" target="_blank"><img src="/res/images/mp3.png" class="listenonlink"></a><br class="mp3">
+        <a href="/" id="newgrounds" class="newgrounds" target="_blank"><img src="/res/images/newgrounds.png" class="listenonlink"></a><br class="mp3">
+        <button onclick="hidegui()" class="closebutton">Close</button>
+    </div>
+    
     <body>
         <nav id="navbar" class="navbar">
             <a class="navlink" id="home" href="">HOME</a>
@@ -19,10 +32,14 @@
             <a class="navlink" id="social" href="" target="_blank">SOCIAL</a>
         </nav>
 
+        
+        
+        <button onclick="showtrack('Aspect', 'Eclipse', 'Enderiac', 'enderiac1/aspect', 'XSBIScppsP8', '1ym1AcvrEXDzsOgG0CH8Gp9shcH--S9Ek', false)">Show track</button>
+
         <div class="copyright" style="margin-top: 40px;">© Enderiac 2023</div>
     </body>
 
-    <script src="/scripts/navpath.js"></script>
-    <script src="/scripts/detectviewportsize.js"></script>
+    <script src="/scripts/main.js"></script>
+    
     
 </html>

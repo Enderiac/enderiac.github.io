@@ -30,6 +30,13 @@
     display: inline-block;
 }
 
+.msgbox {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
 .pagetitle {
     text-align: center;
     font-size: 50px;
@@ -39,6 +46,7 @@
 .projectpanel {
     margin: auto;
     margin-top: 20px;
+    margin: 20px;
 }
 
 .pptitle {
@@ -120,4 +128,15 @@
     position: absolute;
     margin: 10px;
     left: 340px;
+}
+
+#listenon {
+    z-index: 100;
+    width: 300px;
+    height: 80%;
+    margin: auto;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
 }
