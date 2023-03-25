@@ -71,15 +71,20 @@ function showtrack(title, album, artist, sc, yt, mp3, ng) {
     }
 }
 
+function copytext(text) {
+    navigator.clipboard.writeText(text);
+    alert(text + " was copied to clipboard!")
+}
+ 
 // Check viewport size and redirect if too low.
 
 let vw = window.innerWidth
 let vh = window.innerHeight
 
-if (vw < 768) {
-    alert("This website is not yet supported on your device or resolution. Please make your resolution bigger or use a device with a bigger screen. Your resolution: "+vw+"x"+vh)
-    window.location.href = "about:blank"
-}
+// if (vw < 768) {
+//     alert("This website is not yet supported on your device or resolution. Please make your resolution bigger or use a device with a bigger screen. Your resolution: "+vw+"x"+vh)
+//     window.location.href = "about:blank"
+// }
 
 // Configure the paths for the navigation bar.
 

@@ -40,6 +40,7 @@ body {
     background-color: rgb(31, 31, 31);
     margin: 0;
     font-family: Montserrat, 'Segoe UI', Tahoma, Verdana, sans-serif;
+    background-image: url('/res/images/homebg.jpg');
 
     background-position: center;
     background-attachment: fixed;
@@ -185,8 +186,8 @@ input[type=text]:focus {
 }
 
 .navbar {
-    box-shadow: 0px 4px 20px black;
-    background-color: rgb(0, 0, 0);
+    background-color: rgba(0, 0, 0, 0.25); 
+    box-shadow: none;
     text-align: center;
     backdrop-filter: blur(10px);
     
@@ -250,7 +251,10 @@ input[type=text]:focus {
     border-radius: 10px;
     text-align: center;
     transition: all 100ms ease-in-out;
-    
+}
+.emphasis {
+    font-size: 50px;
+    padding: 30px;
 }
 .sectiontitle:hover {
     font-size: 20px;
@@ -263,6 +267,7 @@ input[type=text]:focus {
     
 }
 
+/* Specific custom elements */
 .ltstmsc {
     height: 240px;
     width: 240px;
@@ -349,6 +354,8 @@ input[type=text]:focus {
     font-size: large;
     text-align: center;
     transition: all 100ms ease-in-out;
+    margin-bottom: 20px;
+    cursor: pointer;
 }
 .contactlink:hover {
     color: rgb(0, 150, 209);
@@ -420,4 +427,7 @@ input[type=text]:focus {
 }
 .tlyear {
     color: grey;
+}
+#flps {
+    height: 500px;
 }
