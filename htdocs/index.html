@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Home | Enderiac's Hub</title>
+        <link rel="stylesheet" href="/styles/style.css">
+        <link rel="stylesheet" href="/styles/positioning.css">
+        <link rel="icon" href="/res/images/favicon.ico">
+    </head>
+    
+    <div class="gui" id="listenon">
+        <img id="listenonimg" src="">
+        <h1 id="listenontitle">undefined</h1>
+        <h3 id="listenonartist">undefined</h3>
+        <hr style="margin-top: -5px;">
+        <h2 style="margin-top: 20px;">Listen on</h2>
+        <a href="/" id="soundcloud" class="soundcloud" target="_blank"><img src="/res/images/soundcloud.png" class="listenonlink"></a><br class="soundcloud">
+        <a href="/" id="youtube" class="youtube" target="_blank"><img src="/res/images/youtube.png" class="listenonlink"></a><br class="youtube">
+        <a href="/" id="mp3" class="mp3" target="_blank"><img src="/res/images/mp3.png" class="listenonlink"></a><br class="mp3">
+        <a href="/" id="newgrounds" class="newgrounds" target="_blank"><img src="/res/images/newgrounds.png" class="listenonlink"></a><br class="mp3">
+        <button onclick="hidegui()" class="closebutton">Close</button>
+    </div>
+    
+    <body>
+        <div id="banner">
+            <h3 id="bannertext"></h3>
+        </div>
+        <nav id="navbar" class="navbar">
+            <a class="navlink" id="home" href="">HOME</a>
+            <a class="navlink" id="music" href="">DISCOGRAPHY</a>
+            <a class="navlink" id="exclusive" href="">EXCLUSIVE</a>
+            <a class="navlink" id="social" href="" target="_blank">SOCIAL</a>
+        </nav>
+        <div style="text-align: center; width: 100%; align-items: center;">
+            <img src="/res/images/bannertext.png"
+            style="text-align: center;
+                   align-self: center;
+                   margin-top: 70px;
+                   max-height: 200px;
+                   max-width: 100%;
+                   width: auto;">
+        
+        <h2 style="text-align: center;
+                   margin-top: -30px;
+                   margin-bottom: 100px;">producer, gamer, programmer</h2>
+        </div>
+        
+        <div style="margin-top: 28px;" class="sectiontitle">
+                <h1 class="sectiontxt">Spotlight</h1>
+        </div>
+        <div class="inviscontainer" id="coolthings">
+            <a href="https://youtu.be/-Eyjz_gsxWk" target="_blank">
+                <div class="projectpanel">
+                    <h1 class="pptitle">New house track!</h1>
+                    <h2 class="ppdesc">I made a new house track which includes sampled Windows OS sounds.<br><br>Click to check it out!</h2>
+                </div>
+            </a>
+            <a href="https://on.soundcloud.com/HjKBq" target="_blank">
+                <div class="projectpanel">
+                    <h1 class="pptitle">Synthwave Type Track</h1>
+                    <h2 class="ppdesc">I made a Synthwave type track titled "it's 2050..."<br><br><br>Click to check it out!</h2>
+                </div>
+            </a>
+            <a href="https://youtu.be/HVgjhzn1Pns" target="_blank">
+                <div class="projectpanel">
+                    <h1 class="pptitle">Trying Future Bounce</h1>
+                    <h2 class="ppdesc">New Future Bounce track called 'Velocity.'<br><br><br>Click to check it out!</h2>
+                </div>
+            </a>
+        </div>
+        <a class="latelink" href="https://www.youtube.com/playlist?list=PLeAEmnajg8W7orMl0TY6v5-CuVAGDkDIJ" target="_blank">
+            <h3 style="text-align: center;
+                   margin: 20px;">Check out the Spotlight playlist on YouTube
+            </h3>
+        </a>
+        <div style="margin-top: 28px;" class="sectiontitle">
+            <h1 class="sectiontxt">Latest Music</h1>
+        </div>
+        <div class="inviscontainer" id="ltstmusicsection">
+            <a onclick='showtrack("Vista", "Vista", "Enderiac", "enderiac1/vista", "-Eyjz_gsxWk", "1gmH7xOeQjTRbB4xExo8ON5Mo6Ken3F7c", "1203353")' target="_blank" title="Listen to 'Enderiac - Vista'"> 
+                <img class="ltstmsc"
+                 src="/res/images/ltstmsc1.jpg">
+            </a>  
+            <a onclick='showtrack("its 2050...", "its 2050...", "Enderiac", "enderiac1/its-2050", "FlDWo-qBXUA", "1vezDloGnBoHpXnXUGylsHTFYfjrSl6LH", "1196246")' target="_self" title="Listen to 'Enderiac - it's 2050...">
+                 <img class="ltstmsc"
+                 src="/res/images/ltstmsc2.jpg">
+            </a>
+            <a href="/music" target="_self">
+                <img class="ltstmsc" 
+                 src="/res/images/more.png"
+                 title="More Music">
+            </a>
+        </div>
+        
+        <div class="contact">
+            <div style="background-color: rgba(0, 0, 0, 0); margin-top: 40px; backdrop-filter: none; height: 90px; margin: 10px;">
+                <h1 class="sectiontxt">Contact</h1>
+            </div>
+            <hr width="100px" style="margin: auto; margin-bottom: 30px; margin-top: -15px; background-color: white;">
+            <a class="contactlink" href="mailto:tonidp8@gmail.com">Primary email: tonidp8@gmail.com</a>
+            <br>
+            <br>
+            <a class="contactlink" href="mailto:enderiacofficial@outlook.com">Secondary email: enderiacofficial@outlook.com</a> 
+            <br>
+            <br>
+            <a class="contactlink" id="discord" style="cursor: text;">Discord: Enderiac#6974</a>
+        </div>
+        <div class="copyright">© Enderiac 2023</div>
+    </body>
+
+    <script src="/scripts/main.js"></script>
+    
+    
+</html>

@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Discography | Enderiac's Hub</title>
+        <link rel="stylesheet" href="/styles/style.css">
+        <link rel="stylesheet" href="/styles/positioning.css">
+        <link rel="icon" href="/res/images/music.ico">
+    </head>
+    
+    <div class="gui" id="listenon">
+        <img id="listenonimg" src="">
+        <h1 id="listenontitle">undefined</h1>
+        <h3 id="listenonartist">undefined</h3>
+        <hr style="margin-top: -5px;">
+        <h2 style="margin-top: 20px;">Listen on</h2>
+        <a href="/" id="soundcloud" class="soundcloud" target="_blank"><img src="/res/images/soundcloud.png" class="listenonlink"></a><br class="soundcloud">
+        <a href="/" id="youtube" class="youtube" target="_blank"><img src="/res/images/youtube.png" class="listenonlink"></a><br class="youtube">
+        <a href="/" id="mp3" class="mp3" target="_blank"><img src="/res/images/mp3.png" class="listenonlink"></a><br class="mp3">
+        <a href="/" id="newgrounds" class="newgrounds" target="_blank"><img src="/res/images/newgrounds.png" class="listenonlink"></a><br class="mp3">
+        <button onclick="hidegui()" class="closebutton">Close</button>
+    </div>
+
+    <body>
+        <nav id="navbar" class="navbar">
+            <a class="navlink" id="home" href="">HOME</a>
+            <a class="navlink" id="music" href="">DISCOGRAPHY</a>
+            <a class="navlink" id="exclusive" href="">EXCLUSIVE</a>
+            <a class="navlink" id="social" href="" target="_blank">SOCIAL</a>
+        </nav>
+        <div class="sectiontitle" style="margin-top: 28px;">
+            <h1 class="sectiontxt" style="margin-top: -15px;">Discography</h1>
+        </div>
+        <div class="tracklist">
+            <div class="container" id="track">
+                <img class="tlalbumart" src="/music/res/Vista.jpg">
+                <h2 class="tlartistname">Enderiac</h2>
+                <h1 class="tlalbumname">Vista</h1>
+                <a href="https://drive.google.com/uc?export=download&id=1gmH7xOeQjTRbB4xExo8ON5Mo6Ken3F7c" class="tldownload">Download</a>
+                <a onclick='showtrack("Vista", "Vista", "Enderiac", "enderiac1/vista", "-Eyjz_gsxWk", "1gmH7xOeQjTRbB4xExo8ON5Mo6Ken3F7c", "1203353")' class="tlalltracks" target="_blank">Play</a>
+                <h4 class="tlyear"><span class="gold">Latest!</span> | 2023</h4>
+            </div>
+            <div class="container" id="track">
+                <img class="tlalbumart" src="/music/res/its 2050....jpg">
+                <h2 class="tlartistname">Enderiac</h2>
+                <h1 class="tlalbumname">it's 2050...</h1>
+                <a href="https://drive.google.com/uc?export=download&id=1vezDloGnBoHpXnXUGylsHTFYfjrSl6LH" class="tldownload">Download</a>
+                <a onclick='showtrack("its 2050...", "its 2050...", "Enderiac", "enderiac1/its-2050", "FlDWo-qBXUA", "1vezDloGnBoHpXnXUGylsHTFYfjrSl6LH", "1196246")' class="tlalltracks" target="_blank">Play</a>
+                <h4 class="tlyear">2023</h4>
+            </div>
+            <div class="container" id="track">
+                <img class="tlalbumart" src="/music/res/Velocity.jpg">
+                <h2 class="tlartistname">Enderiac</h2>
+                <h1 class="tlalbumname">Velocity</h1>
+                <a href="https://drive.google.com/uc?export=download&id=1FiXDRXWRX_rCRmePlpiffHMJQDxQY02X" class="tldownload">Download</a>
+                <a onclick='showtrack("Velocity", "Velocity", "Enderiac", "enderiac1/velocity", "HVgjhzn1Pns", "1FiXDRXWRX_rCRmePlpiffHMJQDxQY02X", false)' class="tlalltracks" target="_blank">Play</a>
+                <h4 class="tlyear">2023</h4>
+            </div>
+            <div class="container" id="track">
+                <img class="tlalbumart" src="/music/res/Eclipse.jpg">
+                <h2 class="tlartistname">Enderiac</h2>
+                <h1 class="tlalbumname">Eclipse</h1>
+                <a href="/music/eclipse.html" class="tldownload">Download</a>
+                <a class="tlalltracks" href="/music/eclipse.html">View all tracks</a>
+                <h4 class="tlyear">2022</h4>
+            </div>
+            <div class="container" id="track">
+                <img class="tlalbumart" src="/music/res/Collision.jpg">
+                <h2 class="tlartistname">Enderiac</h2>
+                <h1 class="tlalbumname">Collision</h1>
+                <a href="https://drive.google.com/uc?export=download&id=17N0ms69e1bl9iSKPipfx_XegdJA6MbS5" class="tldownload">Download</a>
+                <a onclick='showtrack("Collision", "Collision", "Enderiac", "enderiac1/collision", "ly0wNk-r5rc", "17N0ms69e1bl9iSKPipfx_XegdJA6MbS5", "1194518")' class="tlalltracks" target="_blank">Play</a>
+                <h4 class="tlyear">2022</h4>
+            </div>
+            <div class="container" id="track">
+                <img class="tlalbumart" src="/music/res/Hypnosis.jpg">
+                <h2 class="tlartistname">Enderiac</h2>
+                <h1 class="tlalbumname">Hypnosis</h1>
+                <a href="https://drive.google.com/uc?export=download&id=1TDYXuMmSOH2ZoM9kL2Wj9Z5LGSWjUZ2n" class="tldownload">Download</a>
+                <a onclick='showtrack("Hypnosis", "Hypnosis", "Enderiac", "enderiac1/hypnosis", "nt9vrKNsx9Y", "1TDYXuMmSOH2ZoM9kL2Wj9Z5LGSWjUZ2n", "1194517")' class="tlalltracks" target="_blank">Play</a>
+                <h4 class="tlyear">2022</h4>
+            </div>
+            <div class="container" id="track">
+                <img class="tlalbumart" src="/music/res/Blast.jpg">
+                <h2 class="tlartistname">Enderiac</h2>
+                <h1 class="tlalbumname">Blast</h1>
+                <a class="tldownload" style="color: gray;
+                background-color: rgb(39, 39, 39);
+                border-color: rgb(39, 39, 39);
+                border-width: 0px;
+                cursor: not-allowed;
+                box-shadow: none;" title="This album or track is unavailable for download.">Download</a>
+                <a onclick='showtrack("Blast", "Blast", "Enderiac", false, "eXdwVRlZfnU", "1KrqGSIF47tr1tcgaihOF42wNhzzK-sTq", false)' class="tlalltracks" target="_blank">Play</a>
+                <h4 class="tlyear">2021</h4>
+            </div>
+            <div class="container" id="track">
+                <img class="tlalbumart" src="/music/res/Glitched.jpg">
+                <h2 class="tlartistname">Enderiac</h2>
+                <h1 class="tlalbumname">Glitched</h1>
+                <a class="tldownload" href="/music/glitched.html">Download</a>
+                <a class="tlalltracks" href="/music/glitched.html">View all tracks</a>
+                <h4 class="tlyear">2021</h4>
+            </div>
+        </div>
+        <div class="copyright" style="margin-top: 40px;">© Enderiac 2023</div>
+    </body>
+
+    <script src="/scripts/main.js"></script>
+    
+    
+</html>
