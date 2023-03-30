@@ -5,16 +5,12 @@
 );
 
 /* Animations */
-
-@keyframes glowSection {
-    100% {
-        box-shadow: 0px 0px 20px rgb(0, 150, 209);
-    }
-}
 @keyframes errorRotate {
-    100% {
-        transform: rotateX(360deg);
-    }
+    100% {transform: rotateX(360deg);}
+}
+@keyframes goldflash {
+    50% {color: rgb(255, 231, 92); text-shadow: 0px 0px 10px rgb(255, 231, 92)}
+    100% {color: gold; text-shadow: 0px 0px 10px gold}
 }
 
 /* Default Elements */
@@ -22,6 +18,13 @@
 ::-webkit-scrollbar {
     background-color: rgba(0, 0, 0, 0);
     width: 10px;
+    height: 10px;
+}
+::-webkit-scrollbar-track {
+    background: none;
+}
+::-webkit-scrollbar-corner {
+    background: none;
 }
 ::-webkit-scrollbar-thumb {
     background-color: rgb(58, 58, 58);
@@ -101,35 +104,19 @@ button:disabled:active {
     box-shadow: none;
 }
 
-iframe {
-    border-radius: 20px;
-    border-width: 0px;
-    margin-left: 10px;
-    margin-right: 10px;
-}
-
 hr {
     margin: 10px;
     background-color: rgb(34, 34, 34);
     height: 1px;
     border: none;
 }
-
-th {
-    font-weight: 500;
-    font-size: x-large;
-    width: 800px;
-    background-color: rgb(24, 24, 24);
-    height: 50px;
-    border: 1px solid black;
-    border-collapse: collapse;
+.cover {
+    margin-top: -21px;
+    width: 100vw;
+    height: 100vh;
+    background-color: black;
 }
 
-td {
-    font-size: x-large;
-    border: 1px solid black;
-    border-collapse: collapse;
-}
 
 input[type=text] {
     height: 40px;
@@ -159,15 +146,21 @@ input[type=text]:focus {
     min-height: 50px;
 }
 
+#banner {
+    height: 60px;
+    background-color: black;
+    display: none;
+}
+
 .gui {
-    opacity: 0;
     display: none;
     margin: 10px;
     border-radius: 10px;
     background-color: rgba(12, 12, 12, 0.90);
     backdrop-filter: blur(10px);
     box-shadow: 5px 5px 20px black;
-    min-height: 50px;
+    width: fit-content;
+    min-height: 200px;
 }
 .closebutton {
     margin: 10px;
@@ -264,6 +257,17 @@ input[type=text]:focus {
     vertical-align: middle;
     height: min-content;
     resize: both;
+}
+.gold {
+    color: gold;
+    text-shadow: 0px 0px 10px gold;
+    transition: all 100ms ease-in-out;
+    cursor: default;
+}
+.gold:hover {
+    animation-name: goldflash;
+    animation-duration: 200ms;
+    animation-iteration-count: infinite;
     
 }
 
@@ -284,7 +288,6 @@ input[type=text]:focus {
 #listenon {
     text-align: center;
     overflow-y: auto;
-    
     transition: all 200ms ease-in-out;
 }
 #listenon::-webkit-scrollbar {
@@ -427,6 +430,8 @@ input[type=text]:focus {
 }
 .tlyear {
     color: grey;
+    width: 200px;
+    text-align: right;
 }
 #flps {
     height: 500px;

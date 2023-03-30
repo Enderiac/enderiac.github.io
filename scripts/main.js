@@ -1,21 +1,41 @@
 let d = document;
 let guishowing = false;
+const urlParams = new URLSearchParams(window.location.search);
+
+let banner = d.getElementById("banner")
+let bannertext = d.getElementById("bannertext")
+let bannerenabled = false;
+let bannertext_ = "";
+
+if (bannerenabled) {
+    banner.style.display = "block";
+    bannertext.innerHTML = bannertext_;
+}
+
+// General functions
 
 function hidegui() {
     if (guishowing) {
         var gui = d.querySelectorAll(".gui");
         for (var i = 0; i < gui.length; i++) {
-            gui[i].style.opacity = 0;
             gui[i].style.display = "none"
             guishowing = false;
         }
     }
 }
 
+function runurlfunc() {
+    const funcname = urlParams.get('run');
+    eval(funcname)
+}
+
+function go(to) {
+    window.location.href = to;
+}
+
 function showtrack(title, album, artist, sc, yt, mp3, ng) {
     if (!guishowing) {
-        d.getElementById("listenon").style.display = "block"
-        d.getElementById("listenon").style.opacity = 1;
+        d.getElementById("listenon").style.display = "inline-block"
         guishowing = true;
     }
     
@@ -24,7 +44,7 @@ function showtrack(title, album, artist, sc, yt, mp3, ng) {
     var mp3link = d.querySelectorAll(".mp3");
     var nglink = d.querySelectorAll(".newgrounds");
     
-    d.getElementById("listenonimg").src = "/music/res/" + album + ".png";
+    d.getElementById("listenonimg").src = "/music/res/" + album + ".jpg";
     d.getElementById("listenontitle").innerHTML = title;
     d.getElementById("listenonartist").innerHTML = artist;
     
@@ -75,25 +95,18 @@ function copytext(text) {
     navigator.clipboard.writeText(text);
     alert(text + " was copied to clipboard!")
 }
- 
-// Check viewport size and redirect if too low.
 
-let vw = window.innerWidth
-let vh = window.innerHeight
-
-// if (vw < 768) {
-//     alert("This website is not yet supported on your device or resolution. Please make your resolution bigger or use a device with a bigger screen. Your resolution: "+vw+"x"+vh)
-//     window.location.href = "about:blank"
-// }
 
 // Configure the paths for the navigation bar.
 
-let homepath = "/home"
+let homepath = "/"
 let musicpath = "/music"
 let exclusivepath = "/exclusive"
 let socialpath = "https://linktr.ee/enderiac"
 
-document.getElementById("home").href = homepath;
-document.getElementById("music").href = musicpath;
-document.getElementById("exclusive").href = exclusivepath;
-document.getElementById("social").href = socialpath;
+d.getElementById("home").href = homepath;
+d.getElementById("music").href = musicpath;
+d.getElementById("exclusive").href = exclusivepath;
+d.getElementById("social").href = socialpath;
+
+runurlfunc();

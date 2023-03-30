@@ -127,7 +127,7 @@
 .tlyear {
     position: absolute;
     margin: 10px;
-    left: 340px;
+    left: 180px;
 }
 
 #listenon {
@@ -139,4 +139,20 @@
     top: 50%;
     left: 50%;
     transform: translateX(-50%) translateY(-50%);
+}
+
+.centered {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+}
+
+#banner {
+    position: sticky;
+    margin-top: -20px;
+}
+#bannertext {
+    line-height: 60px;
+    text-align: center;
 }
