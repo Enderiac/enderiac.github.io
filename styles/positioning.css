@@ -133,7 +133,8 @@
 #listenon {
     z-index: 100;
     width: 300px;
-    height: 80%;
+    height: auto;
+    max-height: 80%;
     margin: auto;
     position: fixed;
     top: 50%;
@@ -141,6 +142,29 @@
     transform: translateX(-50%) translateY(-50%);
 }
 
+#menu {
+    z-index: 101;
+    width: 300px;
+    height: auto;
+    max-height: 80%;
+    margin: auto;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+}
+.menulink {
+    margin: 10px;
+    font-size: 24px;
+    margin-bottom: 10px;
+    line-height: 1;
+}
+  
+.menuimg {
+    display: inline-block;
+    height: 24px;
+    vertical-align: middle;
+}
 .centered {
     position: absolute;
     top: 50%;
@@ -155,4 +179,9 @@
 #bannertext {
     line-height: 60px;
     text-align: center;
+}
+
+#cover {
+    margin-top: 30vh;
+    margin-bottom: 37vh;
 }

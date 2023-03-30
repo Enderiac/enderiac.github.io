@@ -16,9 +16,33 @@
         <link rel="stylesheet" href="/styles/positioning.css">
         <link rel="icon" href="/res/images/more.ico">
     </head>
-    
+    <div class="gui" id="menu">
+        <h1 class="guititle">Navigation</h1>
+        <hr style="margin-top: -5px;">
+        <a class="menulink" id="_home" href="">
+            <span class="icon"><img class="menuimg" src="/res/images/home.png" alt="icon"></span>
+            Home
+        </a><br><br>
+        <a class="menulink" id="_music" href="">
+            <span class="icon"><img class="menuimg" src="/res/images/music.png" alt="icon"></span>
+            Discography
+        </a><br><br>
+        <a class="menulink" id="_exclusive" href="">
+            <span class="icon"><img class="menuimg" src="/res/images/exclusive.png" alt="icon"></span>
+            Exclusive
+        </a><br><br>
+        <a class="menulink" id="_social" href="" target="_blank">
+            <span class="icon"><img class="menuimg" src="/res/images/enderiac.png" alt="icon"></span>
+            Social
+        </a><br><br>
+        <button onclick="hidegui()" class="closebutton">Close</button>
+    </div>
     <body style="background-image: url('/res/images/homebg.jpg')">
+        <div id="banner">
+            <h3 id="bannertext"></h3>
+        </div>
         <nav id="navbar" class="navbar">
+            <a class="navlink" id="menubutton" onclick="shownavmenu();">MENU</a>
             <a class="navlink" id="home" href="">HOME</a>
             <a class="navlink" id="music" href="">DISCOGRAPHY</a>
             <a class="navlink" id="exclusive" href="">EXCLUSIVE</a>

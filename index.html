@@ -13,8 +13,8 @@
     
     <div class="gui" id="listenon">
         <img id="listenonimg" src="">
-        <h1 id="listenontitle">undefined</h1>
-        <h3 id="listenonartist">undefined</h3>
+        <h1 id="listenontitle" class="guititle">undefined</h1>
+        <h3 id="listenonartist" class="guisubtitle">undefined</h3>
         <hr style="margin-top: -5px;">
         <h2 style="margin-top: 20px;">Listen on</h2>
         <a href="/" id="soundcloud" class="soundcloud" target="_blank"><img src="/res/images/soundcloud.png" class="listenonlink"></a><br class="soundcloud">
@@ -24,32 +24,55 @@
         <button onclick="hidegui()" class="closebutton">Close</button>
     </div>
     
+    <div class="gui" id="menu">
+        <h1 class="guititle">Navigation</h1>
+        <hr style="margin-top: -5px;">
+        <a class="menulink" id="_home" href="">
+            <span class="icon"><img class="menuimg" src="/res/images/home.png" alt="icon"></span>
+            Home
+        </a><br><br>
+        <a class="menulink" id="_music" href="">
+            <span class="icon"><img class="menuimg" src="/res/images/music.png" alt="icon"></span>
+            Discography
+        </a><br><br>
+        <a class="menulink" id="_exclusive" href="">
+            <span class="icon"><img class="menuimg" src="/res/images/exclusive.png" alt="icon"></span>
+            Exclusive
+        </a><br><br>
+        <a class="menulink" id="_social" href="" target="_blank">
+            <span class="icon"><img class="menuimg" src="/res/images/enderiac.png" alt="icon"></span>
+            Social
+        </a><br><br>
+        <button onclick="hidegui()" class="closebutton">Close</button>
+    </div>
+    
     <body>
         <div id="banner">
             <h3 id="bannertext"></h3>
         </div>
         <nav id="navbar" class="navbar">
+            <a class="navlink" id="menubutton" onclick="shownavmenu();">MENU</a>
             <a class="navlink" id="home" href="">HOME</a>
             <a class="navlink" id="music" href="">DISCOGRAPHY</a>
             <a class="navlink" id="exclusive" href="">EXCLUSIVE</a>
             <a class="navlink" id="social" href="" target="_blank">SOCIAL</a>
         </nav>
-        <div style="text-align: center; width: 100%; align-items: center;">
+        <div id="cover" style="text-align: center; width: 100%; align-items: center;">
             <img src="/res/images/bannertext.png"
             style="text-align: center;
                    align-self: center;
-                   margin-top: 70px;
+                   margin-top: -20px;
                    max-height: 200px;
                    max-width: 100%;
                    width: auto;">
         
         <h2 style="text-align: center;
-                   margin-top: -30px;
-                   margin-bottom: 100px;">producer, gamer, programmer</h2>
+                   margin-top: -30px;">producer, gamer, programmer</h2>
         </div>
         
+        
         <div style="margin-top: 28px;" class="sectiontitle">
-                <h1 class="sectiontxt">Spotlight</h1>
+                <h1 class="sectiontxt" id="spotlight">Spotlight</h1>
         </div>
         <div class="inviscontainer" id="coolthings">
             <a href="https://youtu.be/-Eyjz_gsxWk" target="_blank">
@@ -107,6 +130,7 @@
             <br>
             <br>
             <a class="contactlink" id="discord" style="cursor: text;">Discord: Enderiac#6974</a>
+            
         </div>
         <div class="copyright">© Enderiac 2023</div>
     </body>

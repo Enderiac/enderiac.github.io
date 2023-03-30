@@ -1,11 +1,19 @@
-let d = document;
-let guishowing = false;
-const urlParams = new URLSearchParams(window.location.search);
+// Controlled
 
-let banner = d.getElementById("banner")
-let bannertext = d.getElementById("bannertext")
-let bannerenabled = false;
-let bannertext_ = "";
+const d = document;
+const urlParams = new URLSearchParams(window.location.search);
+const banner = d.getElementById("banner")
+const bannertext = d.getElementById("bannertext")
+const bannerenabled = false;
+const bannertext_ = "";
+
+// Independent
+
+let guishowing = false;
+let smallviewport = false;
+if (!smallviewport) {
+    d.getElementById("menubutton").style.display = "none";
+}
 
 if (bannerenabled) {
     banner.style.display = "block";
@@ -91,15 +99,46 @@ function showtrack(title, album, artist, sc, yt, mp3, ng) {
     }
 }
 
+function shownavmenu() {
+    if (!guishowing) {
+        d.getElementById("menu").style.display = "inline-block"
+        guishowing = true;
+    }
+}
+
 function copytext(text) {
     navigator.clipboard.writeText(text);
     alert(text + " was copied to clipboard!")
 }
 
+window.addEventListener("resize", function() {
+    checkviewportsize(window.innerWidth);
+});
 
-// Configure the paths for the navigation bar.
+function checkviewportsize(vw) {
+    if (vw<=768) {
+        smallviewport = true;
 
-let homepath = "/"
+        d.getElementById("menubutton").style.display = "table-cell"
+        d.getElementById("home").style.display = "none";
+        d.getElementById("music").style.display = "none";
+        d.getElementById("exclusive").style.display = "none";
+        d.getElementById("social").style.display = "none";
+    } else {
+        smallviewport = false;
+        
+        d.getElementById("menubutton").style.display = "none"
+        d.getElementById("home").style.display = "table-cell"
+        d.getElementById("music").style.display = "table-cell"
+        d.getElementById("exclusive").style.display = "table-cell"
+        d.getElementById("social").style.display = "table-cell"
+    }
+}
+
+
+// Path configuration
+
+let homepath = "/index.html"
 let musicpath = "/music"
 let exclusivepath = "/exclusive"
 let socialpath = "https://linktr.ee/enderiac"
@@ -109,4 +148,11 @@ d.getElementById("music").href = musicpath;
 d.getElementById("exclusive").href = exclusivepath;
 d.getElementById("social").href = socialpath;
 
+d.getElementById("_home").href = homepath;
+d.getElementById("_music").href = musicpath;
+d.getElementById("_exclusive").href = exclusivepath;
+d.getElementById("_social").href = socialpath;
+
 runurlfunc();
+
+checkviewportsize(window.innerWidth);

@@ -65,10 +65,6 @@ p {
     font-size: 26px;
 }
 
-h1 {
-    font-weight: 400;
-}
-
 button {
     background-color: rgb(0, 150, 209);
     font-family: Montserrat, 'Segoe UI', Tahoma, Verdana, sans-serif;
@@ -162,9 +158,20 @@ input[type=text]:focus {
     width: fit-content;
     min-height: 200px;
 }
+.guititle {
+    margin-top: -2px;
+    margin: 10px;
+    text-align: center;
+}
+.guisubtitle {
+    color: gray;
+    margin-top: -10px;
+    margin: 10px;
+}
 .closebutton {
     margin: 10px;
-    width: 200px;
+    width: 280px;
+    background-color: rgba(0, 0, 0, 0);
 }
 
 .invis_container {
@@ -201,6 +208,18 @@ input[type=text]:focus {
     text-shadow: 0px 0px 20px rgb(0, 150, 209);
 }
 .navlink:active {
+    color: rgb(0, 106, 148);
+    text-shadow: 0px 0px 20px rgb(0, 119, 255);
+}
+
+.menulink {
+    transition: all 100ms ease-in-out;
+}
+.menulink:hover {
+    color: rgb(0, 150, 209);
+    text-shadow: 0px 0px 20px rgb(0, 150, 209);
+}
+.menulink:active {
     color: rgb(0, 106, 148);
     text-shadow: 0px 0px 20px rgb(0, 119, 255);
 }
@@ -299,13 +318,7 @@ input[type=text]:focus {
     border-radius: 10px;
     display: block;
 }
-#listenontitle {
-    margin-top: -2px;
-}
-#listenonartist {
-    color: gray;
-    margin-top: -10px;
-}
+
 .listenonlink {
     height: 50px;
     margin: 10px;
@@ -321,7 +334,7 @@ input[type=text]:focus {
 
 .projectpanel {
     height: 250px;
-    width: 400px;
+    width: 390px;
     background-color: rgba(0, 150, 209, 0.384);
     border-radius: 10px;
     box-shadow: 5px 5px 20px black;
