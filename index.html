@@ -10,6 +10,32 @@
         <link rel="stylesheet" href="/styles/positioning.css">
         <link rel="icon" href="/res/images/favicon.ico">
     </head>
+
+    <style>
+        .ltstmsc {
+            height: 240px;
+            width: 240px;
+            cursor: pointer;
+            border-radius: 10px;
+    
+            transition: all 100ms ease-in-out;
+        }
+        .ltstmsc:hover {
+            border-radius: 30px;
+            box-shadow: 0px 0px 10px white;
+        }
+
+        .contactlink {
+            font-size: large;
+            text-align: center;
+            transition: all 100ms ease-in-out;
+            margin-bottom: 20px;
+            cursor: pointer;
+        }
+        .contactlink:hover {
+            color: rgb(0, 150, 209);
+        }
+    </style>
     
     <div class="gui" id="listenon">
         <img id="listenonimg" src="">
@@ -66,8 +92,9 @@
                    max-width: 100%;
                    width: auto;">
         
-        <h2 style="text-align: center;
-                   margin-top: -30px;">producer, gamer, programmer</h2>
+            <h2 style="text-align: center;
+                   margin-top: -30px;">producer, gamer, programmer
+            </h2>
         </div>
         
         
@@ -102,7 +129,7 @@
         <div style="margin-top: 28px;" class="sectiontitle">
             <h1 class="sectiontxt">Latest Music</h1>
         </div>
-        <div class="inviscontainer" id="ltstmusicsection">
+        <div class="inviscontainer" id="ltstmusicsection" style="height: auto; text-align: center; overflow: auto;">
             <a onclick='showtrack("Vista", "Vista", "Enderiac", "enderiac1/vista", "-Eyjz_gsxWk", "1gmH7xOeQjTRbB4xExo8ON5Mo6Ken3F7c", "1203353")' target="_blank" title="Listen to 'Enderiac - Vista'"> 
                 <img class="ltstmsc"
                  src="/res/images/ltstmsc1.jpg">

@@ -58,7 +58,7 @@ function showtrack(title, album, artist, sc, yt, mp3, ng) {
     
 
     if (sc) {
-        d.getElementById("soundcloud").href = "https://soundcloud.com/" + sc;
+        d.getElementById("soundcloud").href = sc;
         for (var i = 0; i < sclink.length; i++) {
         sclink[i].style.display = "block";
         }
@@ -68,7 +68,7 @@ function showtrack(title, album, artist, sc, yt, mp3, ng) {
         } 
     }
     if (yt) {
-        d.getElementById("youtube").href = "https://youtu.be/" + yt;
+        d.getElementById("youtube").href = yt;
         for (var i = 0; i < ytlink.length; i++) {
         ytlink[i].style.display = "block";
         }
@@ -78,7 +78,7 @@ function showtrack(title, album, artist, sc, yt, mp3, ng) {
         } 
     }
     if (mp3) {
-        d.getElementById("mp3").href = "https://drive.google.com/file/d/" + mp3;
+        d.getElementById("mp3").href = mp3;
         for (var i = 0; i < mp3link.length; i++) {
         mp3link[i].style.display = "block";
         }
@@ -88,7 +88,7 @@ function showtrack(title, album, artist, sc, yt, mp3, ng) {
         } 
     }
     if (ng) {
-        d.getElementById("newgrounds").href = "https://www.newgrounds.com/audio/listen/" + ng;
+        d.getElementById("newgrounds").href = ng;
         for (var i = 0; i < nglink.length; i++) {
         nglink[i].style.display = "block";
         }
@@ -138,7 +138,7 @@ function checkviewportsize(vw) {
 
 // Path configuration
 
-let homepath = "/index.html"
+let homepath = "/?"
 let musicpath = "/music"
 let exclusivepath = "/exclusive"
 let socialpath = "https://linktr.ee/enderiac"

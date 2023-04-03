@@ -106,13 +106,6 @@ hr {
     height: 1px;
     border: none;
 }
-.cover {
-    margin-top: -21px;
-    width: 100vw;
-    height: 100vh;
-    background-color: black;
-}
-
 
 input[type=text] {
     height: 40px;
@@ -181,10 +174,6 @@ input[type=text]:focus {
     min-height: 50px;
 }
 
-#title {
-    height: 50px;
-}
-
 .navbar {
     background-color: rgba(0, 0, 0, 0.25); 
     box-shadow: none;
@@ -224,37 +213,6 @@ input[type=text]:focus {
     text-shadow: 0px 0px 20px rgb(0, 119, 255);
 }
 
-#fourzerofour {
-    text-align: center;
-    font-size: 140px;
-
-    font-family: "Times New Roman";
-    font-weight: bold;
-    color: grey;
-
-    text-shadow: 10px 10px 5px black;
-
-    vertical-align: middle;
-
-    animation-name: errorRotate;
-    animation-duration: 2s;
-    animation-iteration-count: infinite;
-    animation-timing-function: linear;
-}
-
-.latelink {
-    text-align: center;
-    transition: all 100ms ease-in-out;
-}
-.latelink:hover {
-    color: rgb(0, 150, 209);
-    text-shadow: 0px 0px 20px rgb(0, 150, 209);
-}
-.latelink:active {
-    color: rgb(0, 106, 148);
-    text-shadow: 0px 0px 20px rgb(0, 119, 255);
-}
-
 .sectiontitle {
     background-color: rgba(0, 0, 0, 0.507);
     backdrop-filter: blur(10px);
@@ -264,10 +222,7 @@ input[type=text]:focus {
     text-align: center;
     transition: all 100ms ease-in-out;
 }
-.emphasis {
-    font-size: 50px;
-    padding: 30px;
-}
+
 .sectiontitle:hover {
     font-size: 20px;
 }
@@ -277,33 +232,9 @@ input[type=text]:focus {
     height: min-content;
     resize: both;
 }
-.gold {
-    color: gold;
-    text-shadow: 0px 0px 10px gold;
-    transition: all 100ms ease-in-out;
-    cursor: default;
-}
-.gold:hover {
-    animation-name: goldflash;
-    animation-duration: 200ms;
-    animation-iteration-count: infinite;
-    
-}
+
 
 /* Specific custom elements */
-.ltstmsc {
-    height: 240px;
-    width: 240px;
-    cursor: pointer;
-    border-radius: 10px;
-    
-    transition: all 100ms ease-in-out;
-}
-.ltstmsc:hover {
-    border-radius: 30px;
-    box-shadow: 0px 0px 10px white;
-}
-
 #listenon {
     text-align: center;
     overflow-y: auto;
@@ -353,29 +284,6 @@ input[type=text]:focus {
     text-align: center;
 }
 /* Specific IDs and Classes */
-#movingtext {
-    text-align: center;
-    width: 500px;
-}
-#submitTxt {
-    width: 200px;
-}
-#ltstmusicsection {
-    height: auto;
-    text-align: center;
-    overflow: auto;
-}
-
-.contactlink {
-    font-size: large;
-    text-align: center;
-    transition: all 100ms ease-in-out;
-    margin-bottom: 20px;
-    cursor: pointer;
-}
-.contactlink:hover {
-    color: rgb(0, 150, 209);
-}
 
 .copyright {
     text-align: center;
@@ -431,7 +339,7 @@ input[type=text]:focus {
     width: auto;
     text-align: center;
     transition: all 100ms ease-in-out;
-    cursor: default;
+    cursor: pointer;
 }
 .tlalltracks:hover {
     color: rgb(0, 150, 209);
@@ -445,7 +353,4 @@ input[type=text]:focus {
     color: grey;
     width: 200px;
     text-align: right;
-}
-#flps {
-    height: 500px;
 }
