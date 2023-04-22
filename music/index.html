@@ -11,6 +11,21 @@
         <link rel="icon" href="/res/images/music.ico">
     </head>
 
+    <style>
+        .ltstmsc {
+            height: 240px;
+            width: 240px;
+            cursor: pointer;
+            border-radius: 10px;
+    
+            transition: all 100ms ease-in-out;
+        }
+        .ltstmsc:hover {
+            border-radius: 30px;
+            box-shadow: 0px 0px 10px white;
+        }
+    </style>
+
     <div class="gui" id="listenon">
         <img id="listenonimg" src="">
         <h1 id="listenontitle" class="guititle">undefined</h1>
@@ -61,11 +76,17 @@
         <div class="tracklist">
             
         </div>
+        <div style="margin-top: 28px;" class="sectiontitle">
+            <h1 class="sectiontxt">Latest Music</h1>
+        </div>
+        <div class="inviscontainer" id="ltstmusicsection" style="height: auto; text-align: center; overflow: auto;">
+            
+        </div>
         <div class="copyright" style="margin-top: 40px;">© Enderiac 2023</div>
     </body>
 
     <script src="/scripts/main.js"></script>
     <script src="index.js"></script>
-    
+    <script src="/scripts/ltstmsc.js"></script>
     
 </html>
