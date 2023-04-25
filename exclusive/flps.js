@@ -50,7 +50,8 @@ for (var i = 0; i < flps.length; i++) {
     if (flps[i].disabled) {
         flpcard.appendChild(dlbutton);
         dllink.remove;
-        dlbutton.innerHTML = "Locked"
+        dlbutton.innerHTML = "Locked";
+        dlbutton.title = "This FLP is currently unavailable.";
         dlbutton.setAttribute("disabled", true);
     }
 }
