@@ -3,13 +3,13 @@ var ltstmscs = [
         'title': "Vista",
         'artist': "Enderiac",
         'album': "Vista",
-        'onclick': 'showtrack("Vista", "Vista", "Enderiac", "enderiac1/vista", "-Eyjz_gsxWk", "1gmH7xOeQjTRbB4xExo8ON5Mo6Ken3F7c", "1203353")',
+        'onclick': '?run=showtrack("Vista", "Vista", "Enderiac", "enderiac1/vista", "-Eyjz_gsxWk", "1gmH7xOeQjTRbB4xExo8ON5Mo6Ken3F7c", "1203353")',
     },
     {
         'title': "it's 2050...",
         'artist': "Enderiac",
         'album': "its 2050...",
-        'onclick': 'showtrack("its 2050...", "its 2050...", "Enderiac", "enderiac1/its-2050", "FlDWo-qBXUA", "1vezDloGnBoHpXnXUGylsHTFYfjrSl6LH", "1196246")',
+        'onclick': '?run=showtrack("its 2050...", "its 2050...", "Enderiac", "enderiac1/its-2050", "FlDWo-qBXUA", "1vezDloGnBoHpXnXUGylsHTFYfjrSl6LH", "1196246")',
     },
 ]
 
@@ -17,7 +17,7 @@ const ltstmscsection = document.getElementById("ltstmusicsection")
 
 for (var i = 0; i < ltstmscs.length; i++) {
     var link = document.createElement("a");
-    link.onclick = ltstmscs[i].onclick;
+    link.href = ltstmscs[i].onclick;
     link.title = "Listen to "+ltstmscs[i].title+" by "+ltstmscs[i].artist+".";
     ltstmscsection.appendChild(link);
 

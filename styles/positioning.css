@@ -104,6 +104,9 @@
     margin-left: 10px;
     padding-top: 35px;
     padding-left: 110px;
+    word-wrap: break-word; /* Break long words */
+    white-space: normal;
+    width: 150px;
 }
 
 .tldownload {

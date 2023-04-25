@@ -1,11 +1,12 @@
 // Controlled
 
 const d = document;
+const url = new URL(window.location.href);
 const urlParams = new URLSearchParams(window.location.search);
 const banner = d.getElementById("banner")
 const bannertext = d.getElementById("bannertext")
 const bannerenabled = false;
-const bannertext_ = "";
+let bannertext_ = "";
 
 // Independent
 
@@ -30,6 +31,8 @@ function hidegui() {
             guishowing = false;
         }
     }
+    url.search = '';
+    history.replaceState(null, null, url.toString());
 }
 
 function runurlfunc() {
@@ -133,6 +136,10 @@ function checkviewportsize(vw) {
     }
 }
 
+function checktextchar(element) {
+    return element.innerHTML.length;
+}
+
 window.addEventListener("resize", function() {
     checkviewportsize(window.innerWidth);
 });
@@ -140,10 +147,10 @@ window.addEventListener("resize", function() {
 
 // Path configuration
 
-let homepath = "/?"
-let musicpath = "/music"
-let exclusivepath = "/exclusive"
-let socialpath = "https://linktr.ee/enderiac"
+const homepath = "/index.html"
+const musicpath = "/music"
+const exclusivepath = "/exclusive"
+const socialpath = "https://linktr.ee/enderiac"
 
 d.getElementById("home").href = homepath;
 d.getElementById("music").href = musicpath;
@@ -158,4 +165,3 @@ d.getElementById("_social").href = socialpath;
 runurlfunc();
 
 checkviewportsize(window.innerWidth);
-
