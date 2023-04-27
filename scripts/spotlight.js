@@ -9,7 +9,7 @@ var cards = [
     {
         'title': "Drum n' Bass concept",
         'desc': "First time attempting to produce Drum n' bass. Click for more info and the download to the FLP.",
-        'link': "https://youtu.be/M79BlrNn-VU",
+        'link': "/exclusive",
         'onclick': false,
     },
     {
