@@ -7,6 +7,18 @@
 
 var cards = [
     {
+        'title': "Trance song to House",
+        'desc': "I created a song which switchs subgenres from Trance to Progressive House. That's all.",
+        'link': "https://youtu.be/wcQZX8sKRG0",
+        'onclick': false,
+    },
+    {
+        'title': "Future Bass Preview",
+        'desc': "I've attempted to make a Future Bass song again.",
+        'link': "https://youtu.be/qZJ7hg1Ilv4",
+        'onclick': false,
+    },
+    {
         'title': "Drum n' Bass concept",
         'desc': "First time attempting to produce Drum n' bass. Click for more info and the download to the FLP.",
         'link': "/exclusive",
