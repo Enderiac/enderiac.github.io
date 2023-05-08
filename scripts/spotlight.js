@@ -8,7 +8,7 @@
 var cards = [
     {
         'title': "Trance song to House",
-        'desc': "I created a song which switchs subgenres from Trance to Progressive House. That's all.",
+        'desc': "I created a song which switchs subgenres from Trance to Progressive House. It will be titled 'Ursa Minor' when released.",
         'link': "https://youtu.be/wcQZX8sKRG0",
         'onclick': false,
     },
