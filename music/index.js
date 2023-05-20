@@ -1,5 +1,15 @@
 var tracks = [
-    {   // Enderiac - Vista
+  {   // Enderiac - Elevation
+        'title': "Elevation",
+        'album': "Elevation",
+        'art': "/music/res/Elevation.jpg",
+        'artist': "Enderiac",
+        'year': "2023",
+        'multipletracks': true,
+        'multipletrackpage': "elevation.html",
+  },  
+  
+  {   // Enderiac - Vista
         'title': "Vista",
         'album': "Vista",
         'art': "/music/res/Vista.jpg",

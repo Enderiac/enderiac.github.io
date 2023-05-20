@@ -5,11 +5,24 @@
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Exclusive | Enderiac's Hub</title>
+        <title>Enderiac - Eclipse | Enderiac's Hub</title>
         <link rel="stylesheet" href="/styles/style.css">
         <link rel="stylesheet" href="/styles/positioning.css">
-        <link rel="icon" href="/res/images/more.ico">
+        <link rel="icon" href="/res/images/music.ico">
     </head>
+    
+    <div class="gui" id="listenon">
+        <img id="listenonimg" src="">
+        <h1 id="listenontitle" class="guititle">undefined</h1>
+        <h3 id="listenonartist" class="guisubtitle">undefined</h3>
+        <hr style="margin-top: -5px;">
+        <h2 style="margin-top: 20px;">Listen on</h2>
+        <a href="/" id="soundcloud" class="soundcloud" target="_blank"><img src="/res/images/soundcloud.png" class="listenonlink"></a><br class="soundcloud">
+        <a href="/" id="youtube" class="youtube" target="_blank"><img src="/res/images/youtube.png" class="listenonlink"></a><br class="youtube">
+        <a href="/" id="mp3" class="mp3" target="_blank"><img src="/res/images/mp3.png" class="listenonlink"></a><br class="mp3">
+        <a href="/" id="newgrounds" class="newgrounds" target="_blank"><img src="/res/images/newgrounds.png" class="listenonlink"></a><br class="mp3">
+        <button onclick="hidegui()" class="closebutton">Close</button>
+    </div>
     <div class="gui" id="menu">
         <h1 class="guititle">Navigation</h1>
         <hr style="margin-top: -5px;">
@@ -31,45 +44,7 @@
         </a><br><br>
         <button onclick="hidegui()" class="closebutton">Close</button>
     </div>
-
-    <style>
-        .flps {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
-        }
-        .flp {
-            position: relative;
-            width: 200px;
-            height: 450px;
-        }
-        .flpthumbnail {
-            width: 200px;
-            border-top-right-radius: 10px;
-            border-top-left-radius: 10px;
-        }
-        .flp div  {
-            margin: 10px;
-        }
-        .flptitle {
-            text-align: center;
-            font-size: 24px;
-        }
-        .flpdownload {
-            position: absolute;
-            
-            width: 190px;
-            left: 50%;
-            top: 90%;
-            transform: translateX(-50%);
-        }
-        .flpdesc {
-            margin: 10px;
-            color: lightgray;
-        }
-    </style>
-
-    <body style="background-image: url('/res/images/homebg.jpg')">
+    <body>
         <div id="banner">
             <h3 id="bannertext"></h3>
         </div>
@@ -81,23 +56,17 @@
             <a class="navlink" id="social" href="" target="_blank">SOCIAL</a>
         </nav>
         <div style="margin-top: 28px;" class="sectiontitle">
-            <h1 class="sectiontxt" style="margin-top: -15px;" title="Free FL Studio Project zips.">Free FLPs</h1>
+            <h1 class="sectiontxt" style="margin-top: -15px;"><span style="color: gray;">Album</span> | Enderiac - Elevation</h1>
         </div>
-        <h2 style="text-align: center;">All FLPs on this page are for educational use only and not for distribution as your own song.</h2>
-        <div class="flps">
+        <h2 style="text-align: center;">This album is a work in progress.</h2>
+        <div class="tracklist">
             
         </div>
-        <div style="margin-top: 28px;" class="sectiontitle">
-            <h1 class="sectiontxt" id="spotlight">All Spotlight Cards</h1>
-        </div>
-        <div class="inviscontainer" id="coolthings">
-            
-        </div>
-        
+
+        <div class="copyright" style="margin-top: 40px;">© Enderiac 2023</div>
     </body>
 
     <script src="/scripts/main.js"></script>
-    <script src="/exclusive/flps.js"></script>
-    <script src="/scripts/spotlight.js"></script>
+    <script src="elevation.js"></script>
     
 </html>

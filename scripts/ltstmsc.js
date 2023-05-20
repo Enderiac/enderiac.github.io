@@ -1,15 +1,15 @@
 var ltstmscs = [
     {
+        'title': "Ursa Minor",
+        'artist': "Enderiac",
+        'album': "Elevation",
+        'onclick': '?run=showtrack("Ursa Minor","Elevation","Enderiac","enderiac1/ursa-minor","inW18miD-h4","1x2owdxaJKH8RTmiwRIiENMTnsbe4OVg2","1215769")',
+    },
+    {
         'title': "Vista",
         'artist': "Enderiac",
         'album': "Vista",
         'onclick': '?run=showtrack("Vista", "Vista", "Enderiac", "enderiac1/vista", "-Eyjz_gsxWk", "1gmH7xOeQjTRbB4xExo8ON5Mo6Ken3F7c", "1203353")',
-    },
-    {
-        'title': "it's 2050...",
-        'artist': "Enderiac",
-        'album': "its 2050...",
-        'onclick': '?run=showtrack("its 2050...", "its 2050...", "Enderiac", "enderiac1/its-2050", "FlDWo-qBXUA", "1vezDloGnBoHpXnXUGylsHTFYfjrSl6LH", "1196246")',
     },
 ]
 

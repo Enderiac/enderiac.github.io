@@ -7,6 +7,12 @@
 
 var cards = [
     {
+        'title': "Upcoming Album",
+        'desc': "Check out the first song of my upcoming EP, Elevation. The song is titled 'Ursa Minor.'",
+        'link': "https://youtu.be/wcQZX8sKRG0",
+        'onclick': false,
+    },
+    {
         'title': "Trance song to House",
         'desc': "I created a song which switchs subgenres from Trance to Progressive House. It will be titled 'Ursa Minor' when released.",
         'link': "https://youtu.be/wcQZX8sKRG0",

@@ -123,6 +123,8 @@ function checkviewportsize(vw) {
         d.getElementById("music").style.display = "none";
         d.getElementById("exclusive").style.display = "none";
         d.getElementById("social").style.display = "none";
+
+        alert("Some elements may be offscreen due to your viewport size. If you are using mobile Chrome or another browser that supports the 'Desktop site' setting, enabling it is recommended.")
     } else {
         smallviewport = false;
         
