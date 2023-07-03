@@ -1,9 +1,9 @@
 var ltstmscs = [
     {
-        'title': "Ursa Minor",
+        'title': "Serenity",
         'artist': "Enderiac",
         'album': "Elevation",
-        'onclick': '?run=showtrack("Ursa Minor","Elevation","Enderiac","enderiac1/ursa-minor","inW18miD-h4","1x2owdxaJKH8RTmiwRIiENMTnsbe4OVg2","1215769")',
+        'onclick': '?run=showtrack("Serenity","Elevation","Enderiac","enderiac1/serenity","MATbbK2i8rw","1odCqGbKwc3ii8BYiWUaUoJFCLpxFqCWd","1226543")',
     },
     {
         'title': "Vista",
