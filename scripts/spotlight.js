@@ -8,8 +8,8 @@
 var cards = [
     {
         'title': "Upcoming Album",
-        'desc': "Check out the first song of my upcoming EP, Elevation. The song is titled 'Ursa Minor.'",
-        'link': "https://youtu.be/wcQZX8sKRG0",
+        'desc': "Check out what's been produced so far in Elevation.",
+        'link': "/music/elevation.html",
         'onclick': false,
     },
     {
