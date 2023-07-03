@@ -13,6 +13,20 @@ var tracks = [
         'multipletracks': false,
         'multipletrackpage': null,
     },
+    {   // Enderiac - Serenity
+        'title': "Serenity",
+        'album': "Elevation",
+        'art': "/music/res/Elevation.jpg",
+        'artist': "Enderiac",
+        'year': "2023",
+        'dl': "https://drive.google.com/uc?export=download&id=1odCqGbKwc3ii8BYiWUaUoJFCLpxFqCWd",
+        'sc': "enderiac1/serenity",
+        'yt': "MATbbK2i8rw",
+        'mp3': "1odCqGbKwc3ii8BYiWUaUoJFCLpxFqCWd",
+        'ng': "1226543",
+        'multipletracks': false,
+        'multipletrackpage': null,
+    },
 ]
 
 const tracklist = document.querySelector(".tracklist")
