@@ -223,9 +223,6 @@ input[type=text]:focus {
     transition: all 100ms ease-in-out;
 }
 
-.sectiontitle:hover {
-    font-size: 20px;
-}
 .sectiontxt {
     line-height: 90px;
     vertical-align: middle;
