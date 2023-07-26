@@ -27,6 +27,20 @@ var tracks = [
         'multipletracks': false,
         'multipletrackpage': null,
     },
+    {   // Enderiac - Altitude
+        'title': "Altitude",
+        'album': "Elevation",
+        'art': "/music/res/Elevation.jpg",
+        'artist': "Enderiac",
+        'year': "2023",
+        'dl': "https://drive.google.com/uc?export=download&id=1mneHpf1A_g8I5eSnKriJCIZObI0gQTV8",
+        'sc': "enderiac1/altitude",
+        'yt': false,
+        'mp3': "1mneHpf1A_g8I5eSnKriJCIZObI0gQTV8",
+        'ng': "1232927",
+        'multipletracks': false,
+        'multipletrackpage': null,
+    },
 ]
 
 const tracklist = document.querySelector(".tracklist")
