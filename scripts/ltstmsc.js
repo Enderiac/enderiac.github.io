@@ -1,9 +1,9 @@
 var ltstmscs = [
     {
-        'title': "Serenity",
+        'title': "Elevation",
         'artist': "Enderiac",
         'album': "Elevation",
-        'onclick': '?run=showtrack("Serenity","Elevation","Enderiac","enderiac1/serenity","MATbbK2i8rw","1odCqGbKwc3ii8BYiWUaUoJFCLpxFqCWd","1226543")',
+        'onclick': '/music/elevation.html',
     },
     {
         'title': "Vista",
